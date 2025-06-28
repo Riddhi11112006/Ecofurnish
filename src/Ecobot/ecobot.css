@@ -1,0 +1,130 @@
+.ecobot-bg {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #e8f5e9 0%, #b2dfdb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+.ecobot-main-container {
+  margin-top: 24px; 
+}
+
+.ecobot-card {
+  background: rgba(255,255,255,0.22);
+  border-radius: 32px;
+  box-shadow: 0 8px 48px 0 rgba(44, 62, 80, 0.13);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  padding: 40px 32px 32px 32px;
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1.5px solid #b2dfdb;
+  animation: cardPop 0.8s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+@keyframes cardPop {
+  0% { transform: scale(0.92); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.ecobot-header h1 {
+  font-size: 2.2rem;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  color: #232526;
+  margin-bottom: 0.2em;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.ecobot-subtitle {
+  color: #388e3c;
+  font-size: 1.05rem;
+  margin-bottom: 1.5em;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.ecobot-upload-area {
+  width: 100%;
+  min-height: 200px;
+  background: rgba(255,255,255,0.32);
+  border: 2.5px dashed #91b785;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 28px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 16px #b2dfdb33;
+  position: relative;
+  overflow: hidden;
+}
+
+.ecobot-upload-area:hover {
+  border-color: #00e676;
+  box-shadow: 0 4px 32px #00e67633;
+}
+
+.ecobot-upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #388e3c;
+  font-size: 1.1rem;
+  opacity: 0.85;
+  gap: 10px;
+}
+
+.ecobot-upload-icon {
+  font-size: 3.5rem !important;
+  color: #00e676;
+  filter: drop-shadow(0 0 12px #91b78588);
+  animation: iconPulse 2s infinite alternate;
+}
+
+@keyframes iconPulse {
+  0% { filter: drop-shadow(0 0 0 #00e676); }
+  100% { filter: drop-shadow(0 0 18px #00e676); }
+}
+
+.ecobot-uploaded-img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #b2dfdb55;
+  border: 1.5px solid #91b785;
+}
+
+.ecobot-suggestion {
+  margin-top: 18px;
+  background: linear-gradient(90deg, #e8f5e9 0%, #b2dfdb 100%);
+  color: #232526;
+  border-radius: 14px;
+  padding: 18px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 16px #b2dfdb33;
+  text-align: center;
+  animation: suggestionPop 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.ecobot-suggestion.loading {
+  color: #00e676;
+  background: none;
+  box-shadow: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+@keyframes suggestionPop {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

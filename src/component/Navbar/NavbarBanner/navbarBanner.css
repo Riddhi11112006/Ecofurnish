@@ -1,0 +1,71 @@
+.navbarBanner   {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 2em 0.5em;
+    background: linear-gradient(120deg,#729168 100%);
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.10);
+    position: relative;
+    z-index: 1;
+    overflow:hidden;
+    animation: gradientMove 8s linear infinite;
+}
+.navbarBanner a {
+    color: inherit !important;
+    text-decoration: none !important;
+    position: relative;
+    padding:  18px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.navbarBanner a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(90deg, #00e676, #91b785);
+    border-radius: 2px;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.navbarBanner a.active {
+    color: #00e676 !important;
+    text-shadow: 0 0 8px #14ec8488;
+}
+
+.HomeBanner,.EcoBotBanner,.wishlistBanner,.cartBanner,.accountBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 18px; 
+    margin: 0 6px;
+    min-width: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+.HomeIcon,.accountIcon,.EcoBotIcon,.wishlistIcon,.cartIcon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+.HomeBanner:hover, .EcoBotBanner:hover, .wishlistBanner:hover, .cartBanner:hover, .accountBanner:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.18);
+    background: #e8f5e9;
+}
+.HomeBanner span,.EcoBotBanner span,.wishlistBanner span,.cartBanner span,.accountBanner span{
+    letter-spacing: 0.01em;
+    color: black !important;
+    align-items: center;
+    font-size:  15px;
+    font-family:open-sans, sans-serif;
+    font-style: Bold;
+    font-weight: 600;    
+}

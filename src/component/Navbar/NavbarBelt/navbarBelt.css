@@ -1,0 +1,72 @@
+.navbarBelt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0;
+    min-height: 80px;
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.18);
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    overflow: hidden;
+    position: relative;
+
+}
+.navbarBelt::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+        135deg,
+        rgba(255,255,255,0.04) 0px,
+        rgba(255,255,255,0.04) 2px,
+        transparent 2px,
+        transparent 8px
+    );
+    pointer-events: none;
+    z-index: 1;
+    animation: moveLines 8s linear infinite;
+}
+
+@keyframes moveLines {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.ecofurnishlogoNavbar {
+    width: 56px;
+    height: 56px;
+    margin-right: 18px;
+    border-radius: 0;
+    box-shadow: 0 0 24px 2px #00e676, 0 0 0 4px #fff;
+    animation: logoGlow 2s infinite alternate;
+    object-fit: contain;
+    background: #fff;
+    z-index: 2;
+}
+
+.ecofurnishtextNavbar {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e0f7fa;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #00e676;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    z-index: 2;
+}
+
+@keyframes logoGlow {
+    0% { box-shadow: 0 0 16px 2px #a5d6a7, 0 0 0 4px #fff; }
+    100% { box-shadow: 0 0 32px 8px #81c784, 0 0 0 4px #fff; }
+}
+@keyframes popIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    80% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
