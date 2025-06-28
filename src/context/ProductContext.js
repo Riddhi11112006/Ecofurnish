@@ -32,7 +32,6 @@ const dummyProducts = [
     rent: '₹80/month',
     image: 'https://images.woodenstreet.de/image/cache/data/side-end-table/vadis-chair-side-table/revised/honey/updated/1-750x650.jpg',
     source: 'olx',
-    sourceUrl: 'https://www.olx.in',
     keywords: ['table', 'side table', 'wood', 'sheesham']
   },
   {
@@ -43,7 +42,6 @@ const dummyProducts = [
     rent: '₹1,100/month',
     image: 'https://tse3.mm.bing.net/th/id/OIP.SOAXM8pBbwjqNMEn0fEg9wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
     source: 'wakefit',
-    sourceUrl: 'https://www.wakefit.co',
     keywords: ['sofa', 'sheesham', 'wood', 'bm wood', '1 seater']
   },
   {
@@ -54,7 +52,6 @@ const dummyProducts = [
     rent: '₹200/month',
     image: 'https://m.media-amazon.com/images/I/91hIrzZgCuL._SL1500_.jpg',
     source: 'flipkart',
-    sourceUrl: 'https://www.flipkart.com',
     keywords: ['chair', 'wooden', 'solimo', 'fegtoh']
   },
   {
@@ -65,7 +62,6 @@ const dummyProducts = [
     rent: '₹350/month',
     image: 'https://m.media-amazon.com/images/I/71A5dL4-q4L._SL1500_.jpg',
     source: 'amazon',
-    sourceUrl: 'https://www.amazon.in',
     keywords: ['mirror', 'arched', 'full length', 'artment', 'vista']
   },
   {
@@ -76,7 +72,6 @@ const dummyProducts = [
     rent: '₹90/month',
     image: 'https://m.media-amazon.com/images/I/61iC5HzJhLL._SL1000_.jpg',
     source: 'flipkart',
-    sourceUrl: 'https://www.flipkart.com',
     keywords: ['chair', 'hanging', 'cotton', 'curio centre']
   },
   {
@@ -87,7 +82,6 @@ const dummyProducts = [
     rent: '₹300/month',
     image: 'https://m.media-amazon.com/images/I/71OktFCWALL._SL1317_.jpg',
     source: 'flipkart',
-    sourceUrl: 'https://www.flipkart.com',
     keywords: ['cabinet', 'tv', 'bluewud', 'christy']
   },
   {
@@ -98,7 +92,6 @@ const dummyProducts = [
     rent: '₹400/month',
     image: 'https://www.ulcdn.net/images/products/809111/product/Hayden_Display_Shelf_californian_walnut_lp.png?1683922966',
     source: 'urban ladder',
-    sourceUrl: 'https://www.urbanladder.com',
     keywords: ['bookshelf', 'modern', 'ladder', 'storage']
   },
   {
@@ -109,7 +102,6 @@ const dummyProducts = [
     rent: '₹250/month',
     image: 'https://tse1.mm.bing.net/th/id/OIP.yrO3KfrqydhU9X3hF3HK6gHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
     source: 'ikea',
-    sourceUrl: 'https://www.ikea.com',
     keywords: ['desk', 'study', 'ikea', 'minimalist']
   },
   {
@@ -120,7 +112,6 @@ const dummyProducts = [
     rent: '₹600/month',
     image: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=600&q=80',
     source: 'wakefit',
-    sourceUrl: 'https://www.wakefit.co',
     keywords: ['mattress', 'queen', 'wakefit', 'bed']
   },
   {
@@ -131,7 +122,6 @@ const dummyProducts = [
     rent: '₹120/month',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHT-O7He9b6wkzD90xSXwRsTGzs5o2GXHmrg&s',
     source: 'flipkart',
-    sourceUrl: 'https://www.flipkart.com',
     keywords: ['lamp', 'floor', 'modern', 'flipkart']
   },
   {
@@ -142,7 +132,6 @@ const dummyProducts = [
     rent: '₹900/month',
     image: 'https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?auto=format&fit=crop&w=600&q=80',
     source: 'amazon',
-    sourceUrl: 'https://www.amazon.in',
     keywords: ['recliner', 'amazon', 'basics', 'chair']
   },
   {
@@ -153,7 +142,6 @@ const dummyProducts = [
     rent: '₹1,000/month',
     image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80',
     source: 'urban ladder',
-    sourceUrl: 'https://www.urbanladder.com',
     keywords: ['dining', 'set', 'urban ladder', 'table', '4 seater']
   },
   {
@@ -164,7 +152,6 @@ const dummyProducts = [
     rent: '₹150/month',
     image: 'https://adona.in/cdn/shop/files/adona-woods-acacia-pulldown-shoerack-cushioned-seat-maple_9_copy_1200x1200.webp?v=1737373997',
     source: 'flipkart',
-    sourceUrl: 'https://www.flipkart.com',
     keywords: ['shoe rack', 'flipkart', 'storage']
   }
 ];
