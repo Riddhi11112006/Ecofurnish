@@ -1,0 +1,59 @@
+.rent-request-btn {
+  background: linear-gradient(90deg, #00e676 0%, #38f9d7 100%);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 14px 36px;
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  box-shadow: 0 4px 18px #38f9d755, 0 0 0 2px #fff;
+  cursor: pointer;
+  transition: background 0.22s, box-shadow 0.22s, color 0.18s, transform 0.12s;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  margin: 8px 0;
+}
+.rent-request-btn:hover {
+  background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+  color: #fff;
+  box-shadow: 0 8px 32px #38ef7d77, 0 0 0 2px #43e97b;
+  transform: translateY(-2px) scale(1.06);
+}
+.rent-request-btn::before {
+  content: '\1F4E6'; /* 📦 package/box icon */
+  font-size: 1.3em;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.cancel-rent-btn {
+  background: linear-gradient(90deg, #ffebee 0%, #ffcdd2 100%);
+  color: #e53935;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 28px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 12px #ffcdd244;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.22s, box-shadow 0.22s, color 0.18s, transform 0.12s;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.cancel-rent-btn:hover {
+  background: linear-gradient(90deg, #ffcdd2 0%, #e57373 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px #e5737377;
+  transform: translateY(-2px) scale(1.04);
+}

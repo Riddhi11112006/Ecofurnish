@@ -1,0 +1,187 @@
+.rent-modal-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(34,40,49,0.45);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rent-modal {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px 28px 24px 28px;
+  box-shadow: 0 8px 32px #00e67633;
+  min-width: 320px;
+  max-width: 95vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rent-modal-close {
+  position: absolute;
+  top: 12px; right: 18px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #00e676;
+  cursor: pointer;
+}
+.rent-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+.rent-form input[type="text"],
+.rent-form input[type="date"],
+.rent-form input[type="email"],
+.rent-form input[type="number"] {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1.2px solid #b2dfdb;
+  font-size: 1rem;
+}
+.rent-form-img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.rent-form-submit {
+  background: linear-gradient(120deg, #00e676 0%, #91b785 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #00e67633;
+  transition: background 0.2s, transform 0.15s;
+}
+.rent-form-submit:hover {
+  background: linear-gradient(120deg, #009e60 0%, #729168 100%);
+  transform: scale(1.04);
+}
+.rentout-modal-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(34,40,49,0.45);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rentout-modal {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px 28px 24px 28px;
+  box-shadow: 0 8px 32px #00e67633;
+  min-width: 320px;
+  max-width: 95vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: popupIn 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes popupIn {
+  0% { transform: scale(0.85) translateY(40px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+.rentout-close {
+  position: absolute;
+  top: 12px; right: 18px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #00e676;
+  cursor: pointer;
+  transition: color 0.18s;
+}
+.rentout-close:hover {
+  color: #009e60;
+}
+.rentout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+.rentout-form input[type="text"],
+.rentout-form input[type="date"],
+.rentout-form input[type="email"],
+.rentout-form input[type="number"] {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1.2px solid #b2dfdb;
+  font-size: 1rem;
+}
+.rentout-img-preview {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.rentout-submit {
+  background: linear-gradient(120deg, #00e676 0%, #91b785 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #00e67633;
+  transition: background 0.2s, transform 0.15s;
+}
+.rentout-submit:hover {
+  background: linear-gradient(120deg, #009e60 0%, #729168 100%);
+  transform: scale(1.04);
+}
+.rent-out-btn {
+  background: linear-gradient(90deg, #00e676 0%, #38f9d7 100%);
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  padding: 12px 32px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  box-shadow: 0 4px 18px #38f9d755, 0 0 0 2px #fff;
+  cursor: pointer;
+  margin-left: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: background 0.22s, box-shadow 0.22s, color 0.18s, transform 0.12s;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+.rent-out-btn:hover {
+  background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+  color: #fff;
+  box-shadow: 0 8px 32px #38ef7d77, 0 0 0 2px #43e97b;
+  transform: translateY(-2px) scale(1.06);
+}
+.rent-out-btn::before {
+  content: '+';
+  font-size: 1.3em;
+  font-weight: 900;
+  color: #fff;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
